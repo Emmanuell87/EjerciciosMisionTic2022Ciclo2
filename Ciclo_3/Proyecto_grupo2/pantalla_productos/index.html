@@ -5,36 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multipan</title>
-    <link rel="shortcut icon" href="Images/Logo.ico">
-    <link rel="stylesheet" href="Styles/Style.css">
+    <link rel="shortcut icon" href="img/Logo.ico">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header tabindex= "-1" class="inicio">
+    <header class="inicio">
                 
-        <img class="inicio__logo" width="192" height="192" src="Images/Logo.jpeg" alt="No se encuentra la imagen">
-        <div>
-            <div >
-                <nav>
-                    <div class="menu">
-                        <ul>
-                        <ul class="menu-principal">
-                          <li >Home</li>
-                          <li >Pedidos</li>
-                          <li >Comprar</li>
-                        </ul>
-                        <ul class="menu-login">
-                          <li><img width="20" height="20" src="Images/perfil.png"></li>
-                          <li><a href="">log in</a></li>
-                          <li><img width="30" height="20" src="Images/bolsa_compra.png"></li>
-                        </ul>
-                        </ul>
-                    </div>
+        <img class="inicio__logo" width="192" height="192" src="img/Logo.jpeg" alt="No se encuentra la imagen">
+        
+        <nav class="menu-principal">
                     
-                </nav>
-            </div>  
-        </div>
+            <ul>      
+                <li><a href="">Home</a></li>
+                <li><a href="">Pedidos</a></li>
+                <li><a href="">Comprar</a></li>
+            </ul> 
+                    
+        </nav>
 
     </header>
+
+    <main>
+        <section>
+            <div class="seccion-producto">
+                <article class="navegacion-productos">
+                    <p class="ruta_pagina">Inicio/Comprar/Torta Tres Leches</p>
+                    <ul>
+                        <li><p class="complemento"><</p></li>
+                        <li class="navegacion"><a href="">Previus</a></li>
+                        <li><p class="complemento">|</p></li>
+                        <li clas="navegacion"><a href="">Next</a></li>
+                        <li><p class="complemento">></p></li>
+                    </ul>
+                </article>
+
+                <article class="visualizacion-producto">
+                    <img class = "producto__imagen" src="img/torta_tres_leches.jpg" alt="">
+                </article >
+
+                <article class="informacion-producto">
+                    <div class="nombre-container">
+                        <p>Torta Tres leches</p>
+                    </div>
+                    <div class="informacion_compra">
+                        <div class="precio_container">
+                            <p>$30.000,00</p>
+                        </div>
+                        <div class="compra_container">
+                            <p style="margin-bottom: 0px;">Cantidad</p>
+                            <input type="number" class="cantidad_compra" name="name" required min="1" max="10" value="1">
+                            <button class="agregar_carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    
+                </article>
+
+                <article>
+                    <div>
+                        <button class="cargar_productos">Cargar más</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="Final">
+            <p>6019999999</p>
+            <img src="img/facebook.ico" alt="Vacío">
+            <img src="img/Twitter.ico" alt="Vacío">
+            <img src="img/Linkedin.ico" alt="Vacío">
+            <p class="Final__fin">&#169; 2021 por Multipan</p>
+        </div>             
+    </footer>
     
 </body>
 </html>
