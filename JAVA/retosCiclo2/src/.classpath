@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="reto1"/>
+	<classpathentry kind="src" path="reto2/src/main/java"/>
+	<classpathentry kind="src" path="reto2/src/test/java"/>
+	<classpathentry kind="src" path="reto4/reto4_p51_SolucionReto4/src/main/java"/>
+	<classpathentry kind="src" path="reto5/reto5_p51_SolucionReto5/src/main/java"/>
+	<classpathentry kind="output" path="reto2/target/classes"/>
+</classpath>

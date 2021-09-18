@@ -1,0 +1,39 @@
+.inicio{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    width: 100%;
+    float: center;
+    text-align:right;
+}
+
+.menu-principal {
+    width: auto;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-principal li {
+    display:inline-block;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.menu-login {
+    width: auto;
+    display: table;
+    float: right;
+
+}
+
+.menu-login li {
+    display:inline-block;
+    list-style: none;
+}
+
+
+.menu ul li a {
+    padding: 10px;  
+}

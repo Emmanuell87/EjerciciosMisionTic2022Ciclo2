@@ -1,0 +1,23 @@
+--REQUERIMIENTO 1
+SELECT Nombre_Material, Precio_Unidad
+FROM MaterialConstruccion mc
+WHERE Importado = 'Si'
+ORDER BY Precio_Unidad DESC;
+
+--REQUERIMIENTO 2
+SELECT DISTINCT p.Constructora, p.Ciudad
+FROM Proyecto p
+WHERE p.Ciudad LIKE 'B%'   
+ORDER BY p.Ciudad;
+
+-- REQUERIMIENTO 3
+SELECT c.Proveedor, mc.Nombre_Material, mc.Importado, mc.Precio_Unidad, SUM(c.Cantidad) Cantidad
+FROM Compra c 
+NATURAL JOIN MaterialConstruccion mc 
+WHERE c.Proveedor = 'Homecenter' 
+AND mc.Importado = 'Si'
+GROUP BY c.Proveedor, mc.Nombre_Material
+HAVING SUM(c.Cantidad) > 100
+ORDER BY c.proveedor, mc.Nombre_material
+
+
